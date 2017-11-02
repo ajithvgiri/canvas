@@ -1,4 +1,4 @@
-package com.ajithvgiri.drawing;
+package com.ajithvgiri.canvaslibrary;
 
 import android.content.Context;
 import android.graphics.Bitmap;
