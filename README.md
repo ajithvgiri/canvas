@@ -3,7 +3,7 @@
 # Drawing App Library
 Simple android library for drawing
 
-![Drawing App](https://imgur.com/a/NSJpC)
+![Drawing App](https://imgur.com/tNgmdNY)
 
 # Setup
 ## 1. Provide the gradle dependency
