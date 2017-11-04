@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/ajithvgiri/canvas-library.svg)](https://jitpack.io/#ajithvgiri/canvas-library)
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Drawing%20Library-green.svg?style=flat )]( https://android-arsenal.com/details/1/6403 ) [![](https://jitpack.io/v/ajithvgiri/canvas-library.svg)](https://jitpack.io/#ajithvgiri/canvas-library)
 
 # Drawing App Library
 Simple android library for drawing
