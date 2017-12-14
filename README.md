@@ -1,9 +1,9 @@
-[![](https://jitpack.io/v/ajithvgiri/canvas-library.svg)](https://jitpack.io/#ajithvgiri/canvas-library)
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Drawing%20Library-green.svg?style=flat )]( https://android-arsenal.com/details/1/6403 ) [![](https://jitpack.io/v/ajithvgiri/canvas-library.svg)](https://jitpack.io/#ajithvgiri/canvas-library)
 
 # Drawing App Library
 Simple android library for drawing
 
-![Drawing App](https://imgur.com/a/NSJpC)
+![Drawing App](https://i.imgur.com/tNgmdNY.png)
 
 # Setup
 ## 1. Provide the gradle dependency
@@ -27,7 +27,7 @@ Add the gradle dependency to your `app` module `build.gradle` file:
 
 ```
 
-## 2. Add the `CanvasView` view to your Relative Layout xml file
+## 2. Add the Canvas View view to your Relative Layout xml file
 
 Make sure `layout_width` and `layout_height` are `match-parent`. and make sure the background of the layout must be white
 
