@@ -22,7 +22,7 @@ Add the gradle dependency to your `app` module `build.gradle` file:
 
 ```
 	dependencies {
-	        compile 'com.github.ajithvgiri:canvas-library:v1.1.0'
+	        compile 'com.github.ajithvgiri:Canvas-Library:v1.1.1'
 	}
 
 ```
