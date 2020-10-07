@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -21,9 +22,28 @@ public class CanvasView extends View {
     Context context;
     private Bitmap mBitmap;
     private Canvas mCanvas;
-    private Path mPath;
-    private Paint mPaint;
+    private final Path mPath;
+    private final Paint mPaint;
     private float mX, mY;
+    private CanvasTouchListener canvasTouchListener;
+
+
+    public CanvasView(Context c, CanvasTouchListener touchListener) {
+        super(c);
+        context = c;
+        this.canvasTouchListener = touchListener;
+
+        // we set a new Path
+        mPath = new Path();
+
+        // and we set a new Paint with the desired attributes
+        mPaint = new Paint();
+        mPaint.setAntiAlias(true);
+        mPaint.setColor(Color.BLACK);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeJoin(Paint.Join.ROUND);
+        mPaint.setStrokeWidth(4f);
+    }
 
     public CanvasView(Context c) {
         super(c);
@@ -85,6 +105,7 @@ public class CanvasView extends View {
     // when ACTION_UP stop touch
     private void upTouch() {
         mPath.lineTo(mX, mY);
+        canvasTouchListener.upTouch();
     }
 
     //override the onTouchEvent
