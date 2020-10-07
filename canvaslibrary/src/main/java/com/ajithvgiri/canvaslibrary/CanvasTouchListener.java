@@ -1,5 +1,5 @@
 package com.ajithvgiri.canvaslibrary;
 
-interface CanvasTouchListener {
+public interface CanvasTouchListener {
     void upTouch();
 }
