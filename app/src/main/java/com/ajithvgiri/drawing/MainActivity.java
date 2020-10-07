@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.ajithvgiri.canvaslibrary.CanvasTouchListener;
 import com.ajithvgiri.canvaslibrary.CanvasView;
 
 import java.io.File;
@@ -17,7 +18,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CanvasTouchListener {
 
     private CanvasView canvasView;
     private RelativeLayout parentView;
@@ -82,4 +83,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Canvas Saved", Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    public void upTouch() {
+
+    }
 }
